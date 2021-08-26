@@ -1,0 +1,1 @@
+create index IX_E4620CAE on AMF_UserExtra (uuid_[$COLUMN_LENGTH:75$]);

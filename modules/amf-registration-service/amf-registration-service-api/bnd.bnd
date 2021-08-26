@@ -1,0 +1,12 @@
+Bundle-Name: amf-registration-service-api
+Bundle-SymbolicName: com.lifray.amf.api
+Bundle-Version: 1.0.0
+Export-Package: \
+	com.lifray.amf.exception,\
+	com.lifray.amf.model,\
+	com.lifray.amf.service,\
+	com.lifray.amf.service.persistence,\
+	com.lifray.amf.util.validator,\
+	com.lifray.amf.validator
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../amf-registration-service-service/service.xml

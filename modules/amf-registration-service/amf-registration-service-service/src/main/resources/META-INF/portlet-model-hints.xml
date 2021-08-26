@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.lifray.amf.model.UserExtra">
+		<field name="uuid" type="String" />
+		<field name="username" type="String" />
+		<field name="userId" type="long" />
+		<field name="mobilePhone" type="long" />
+		<field name="homePhone" type="long" />
+		<field name="securityQuestion" type="String" />
+		<field name="securityQuestionAnswer" type="String" />
+	</model>
+</model-hints>
