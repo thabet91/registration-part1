@@ -17,13 +17,13 @@ import org.osgi.service.component.annotations.Reference;
 
 @Component(
 	     immediate = true, 
-	     service = UserValidator.class
+	     service = UserValidatorImpl.class
 	 )
-public class UserValidatorImpl implements UserValidator {
-	private List<String> errors = new ArrayList<>();
-	@Reference
-	private UserExtraLocalService _userExtraLocalServicel;
-	@Override
+public class UserValidatorImpl {
+	private static List<String> errors = new ArrayList<>();
+	
+	private static UserExtraLocalService _userExtraLocalServicel;
+	
 	public void validate(String firstname, String lastname, String username, String password,
 			String passwordConfirmation, Date birthday, String email, long homePhone, long mobilePhone, String address1,
 			String address2, String city, String state, int zipcode, String securityAnswer, boolean termsOfUse)

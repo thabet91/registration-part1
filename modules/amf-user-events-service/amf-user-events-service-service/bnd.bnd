@@ -1,0 +1,6 @@
+Bundle-Name: amf-user-events-service-service
+Bundle-SymbolicName: com.liferay.amf.user.events.service
+Bundle-Version: 1.0.0
+Liferay-Require-SchemaVersion: 1.0.0
+Liferay-Service: true
+-dsannotations-options: inherit

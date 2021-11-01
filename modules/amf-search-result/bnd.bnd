@@ -1,0 +1,4 @@
+Bundle-Name: amf-search-result
+Bundle-SymbolicName: amf.search.result
+Bundle-Version: 1.0.0
+Export-Package: amf.search.result.constants

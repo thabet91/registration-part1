@@ -1,0 +1,5 @@
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly project(":modules:amf-user-events-service:amf-user-events-service-service")
+	compileOnly project(":modules:amf-user-events-service:amf-user-events-service-api")
+}

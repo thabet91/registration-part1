@@ -1,0 +1,12 @@
+Bundle-Name: amf-user-events-service-api
+Bundle-SymbolicName: com.liferay.amf.user.events.api
+Bundle-Version: 1.0.0
+Export-Package: \
+	com.liferay.amf.user.events.exception,\
+	com.liferay.amf.user.events.model,\
+	com.liferay.amf.user.events.service,\
+	com.liferay.amf.user.events.service.persistence,\
+	com.liferay.amf.user.events.constants,\
+	com.liferay.amf.user.events.dto
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../amf-user-events-service-service/service.xml

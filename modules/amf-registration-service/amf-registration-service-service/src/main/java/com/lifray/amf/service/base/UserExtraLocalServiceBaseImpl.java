@@ -382,5 +382,8 @@ public abstract class UserExtraLocalServiceBaseImpl
 	protected com.liferay.portal.kernel.service.ResourceLocalService
 		resourceLocalService;
 
+	@Reference
+	protected com.liferay.portal.kernel.service.UserLocalService
+		userLocalService;
 
 }

@@ -16,11 +16,9 @@ import com.liferay.portal.kernel.servlet.SessionErrors;
 import com.liferay.portal.kernel.servlet.SessionMessages;
 import com.liferay.portal.kernel.util.ParamUtil;
 import com.liferay.portal.kernel.util.PortalUtil;
-import com.liferay.portal.kernel.util.Validator;
 import com.lifray.amf.exception.UserExtraValidationException;
 import com.lifray.amf.service.UserExtraLocalService;
 import com.lifray.amf.util.validator.UserValidatorImpl;
-import com.lifray.amf.validator.UserValidator;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -39,11 +37,11 @@ public class RegistrationMVCActionCommand extends BaseMVCActionCommand {
 	protected UserLocalService _userService;
 	@Reference
 	protected AddressLocalServiceWrapper addressLocalServiceWrapper;
-	@Reference
+
 	protected UserExtraLocalService userExtraLocalService;
 	
 	@Reference
-	protected UserValidatorImpl validator;
+	protected static UserValidatorImpl validator;
 
 	@Override
 	protected void doProcessAction(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {

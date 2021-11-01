@@ -1,0 +1,21 @@
+<%@ include file="/init.jsp" %>
+
+<liferay-ui:search-container 
+        emptyResultsMessage="no-events" delta = "20"
+      
+        
+        total="${registrationEventsCount}">
+
+        <liferay-ui:search-container-results results="${registrationEvents}" />
+
+        <liferay-ui:search-container-row
+            className="com.liferay.amf.user.events.admin.portlet.dto.UserEventDTO"
+            modelVar="userEvent">
+            <liferay-ui:search-container-column-text property="eventDate"/>
+            <liferay-ui:search-container-column-text property="user"/> 
+            
+            <liferay-ui:search-container-column-text property="userIP"/> 
+             <liferay-ui:search-container-column-text property="eventType"/> 
+        </liferay-ui:search-container-row>
+        <liferay-ui:search-iterator />
+    </liferay-ui:search-container>

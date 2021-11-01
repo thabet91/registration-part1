@@ -1,5 +1,3 @@
-<%@page import="com.liferay.amf.constants.MVCCommandNames"%>
-<%@page import="com.liferay.amf.constants.FieldConstants"%>
 <%@ include file="../init.jsp"%>
 
 <div class="container-fluid-1280 registration">

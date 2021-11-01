@@ -66,8 +66,8 @@ public class UserExtraLocalServiceImpl extends UserExtraLocalServiceBaseImpl {
 		
 	}
 
-	@Reference
-	protected UserLocalService userLocalService;
+//	@Reference
+//	protected UserLocalService userLocalService;
 
 	@Override
 	public UserExtra addUserExtras(String username, long mobilePhone, long homePhone, String securityQuestion,
